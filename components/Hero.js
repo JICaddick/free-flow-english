@@ -1,29 +1,45 @@
-import Link from 'next/link'
+import Image from "next/image";
+import useDimensions from 'react-cool-dimensions';
+import arrayCeil from '../lib/arrayCeil';
+import React, { useState } from 'react'
 
-export default function Hero() {
+const Hero = () => {
+
+  const [heroImage, setHeroImage] = useState()
+  const imageSizes = [600, 1280, 1920]  
+  
+  const { observe } = useDimensions({
+    onResize: ({ observe, unobserve, width, height }) => {
+      setHeroImage(`hero-${arrayCeil(imageSizes, width, height)}.jpg`)
+
+      unobserve(); // To stop observing the current target element
+      observe(); // To re-start observing the current target element
+    },
+  });
+
+
   return (
-    <div className="px-4 mx-auto my-48 text-center max-w-7xl sm:mt-24 md:mt-72">
-      <h1 className="font-extrabold text-gray-900">
-        <p className="text-xl sm:text-3xl md:text-4xl">
-          Learn Some English, BIATCHHHHH:
-        </p>
-        <p className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 sm:text-6xl md:text-7xl">
-          Quit sounding like a dumdum infront of colleagues 
-        </p>
-      </h1>
-      <h2 className="max-w-md mx-auto mt-3 text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-x-3xl">
-        Send me yo moniessss and learn some English, cuz 
-      </h2>
-      <div className="flex items-center justify-center max-w-md mx-auto mt-5 md:mt-8">
-        <Link href="#">
-          <a className="inline-flex items-center justify-center h-12 px-6 py-3 mr-6 font-medium text-white bg-gray-900 border-transparent rounded-md hover:bg-gray-800">
-            Enroll Now
-          </a>
-        </Link>
-        <Link href="#">
-        <a className="inline-flex items-center font-semibold text-gray-900 hover:text-gray-800">Learn more </a>
-        </Link>
+    <div ref={observe} className="px-4 mx-auto my-48 text-center max-w-7xl sm:mt-24 md:mt-72">
+      <Image
+        style={{filter: "blur(1px)", transform: "scale(1.1)", opacity: "0.8", position: "absolute", top: "0", left: "0", width: "100%", height: "100%",}}
+          src={'/hero_image.png'}
+          alt="Hero Image"
+          className="object-cover"
+          layout="fill"
+          quality={100}
+      />
+      <div className="relative content-end">
+        <h1 className="font-extrabold font-lora">
+          <p className="object-cover py-4 mt-24 text-white text-7xl bg-gradient-to-r sm:text-6xl md:text-7xl lg:text-8xl lg:pt-10 text-stroke-4 text-stroke-black .font-lora" style= {{textShadow:"20px 20px 25px black"}}>
+            FUCKINNNN BUSINESS INGLISH MATEEEEE
+          </p>
+        </h1>
+        <h2 className="max-w-md mx-auto my-2 font-bold text-amber-500 pb-28 drop-shadow-2xl shadow-green-700 sm:text-5xl md:mt-5 md:text-5xl text-stroke-2 text-stroke-black" style= {{textShadow:"20px 20px 25px black"}}>
+        Pour some sugar on yourself
+        </h2>
+        </div>
       </div>
-    </div>
-  )
-}
+  );
+};
+
+export default Hero
