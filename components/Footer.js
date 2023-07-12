@@ -9,7 +9,7 @@ const navigation = [
 export default function Footer() {
   return (
     <footer className="bg-white">
-        <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8"> 
+        <div className="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"> 
             <nav className="flex flex-wrap justify-center">
                 {
                     navigation.map((item, i) => (
@@ -21,7 +21,7 @@ export default function Footer() {
                     ))
                 }
             </nav>
-            <p className="mt-8 text-center text-gray-400">&copy;2022 Learn Shopify Next.js Course, All rights reserved.</p>
+            <p className="mt-8 text-center text-gray-400">&copy;2023 Free Flow English, All rights reserved.</p>
         </div>
     </footer>
   )
