@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="relative content-end">
         <h1 className="font-extrabold font-lora">
           <p className="object-cover py-4 mt-24 text-white text-7xl bg-gradient-to-r sm:text-6xl md:text-7xl lg:text-8xl lg:pt-10 text-stroke-4 text-stroke-black .font-lora" style= {{textShadow:"20px 20px 25px black"}}>
-            FUCKINNNN BUSINESS INGLISH MATEEEEE
+            Free Flow English
           </p>
         </h1>
 
