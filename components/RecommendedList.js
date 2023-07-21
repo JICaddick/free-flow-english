@@ -13,8 +13,8 @@ const RecommendedList = ({ products, current }) => {
                             product.node.id === current ? null : <ProductCard key={product.node.id} product={product} />
                         ))
                     }
-                </div> 
-            </div> 
+                </div>
+            </div>
         </div>
     ) 
 }
