@@ -2,14 +2,14 @@
 const navigation = [
 {name: 'About', href: '#'},
 {name: 'Shop', href: '#'},
-{name: 'Jobs', href: '#'},
+{name: 'Contact', href: '#'},
 {name: 'Terms and Conditions', href: '#'}
 ]
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
-        <div className="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"> 
+    <footer className="bg-sky-100">
+        <div className="px-4 py-4 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"> 
             <nav className="flex flex-wrap justify-center">
                 {
                     navigation.map((item, i) => (

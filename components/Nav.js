@@ -14,16 +14,16 @@ export default function Nav() {
 
 
   return (
-    <header className="border-b sticky top-0 z-20 bg-white">
-      <div className="flex items-center justify-between max-w-6xl pt-4 pb-2 px-4 mx-auto lg:max-w-screen-xl">
+    <header className="sticky top-0 z-20 border-b border-black bg-sky-100">
+      <div className="flex items-center justify-between max-w-6xl px-4 pt-4 pb-2 mx-auto lg:max-w-screen-xl">
         <Link href="/" passHref>
           <a className="cursor-pointer">
-            <span className="text-lg pt-1 font-bold">
-              Shopify + Next.js 
+            <span className="pt-1 text-lg font-bold">
+              Home
             </span>
           </a>
         </Link>
-        <a className="text-md font-bold cursor-pointer"
+        <a className="font-bold cursor-pointer text-md"
           onClick={() => setCartOpen(!cartOpen)}
         >
           Cart ({cartQuantity})
