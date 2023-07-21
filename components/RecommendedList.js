@@ -14,7 +14,7 @@ const RecommendedList = ({ products, current }) => {
                         ))
                     }
                 </div> 
-            </div>
+            </div> 
         </div>
     ) 
 }
