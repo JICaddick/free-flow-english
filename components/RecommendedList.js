@@ -16,7 +16,7 @@ const RecommendedList = ({ products, current }) => {
                 </div>
             </div>
         </div>
-    ) 
+    )
 }
 
 export default RecommendedList
