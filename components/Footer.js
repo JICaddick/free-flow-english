@@ -1,9 +1,8 @@
 // navigation array for ease of changin / removing links etc. 
 const navigation = [
-{name: 'About', href: '#'},
-{name: 'Shop', href: '#'},
+{name: 'About', href: '/about'},
 {name: 'Contact', href: '#'},
-{name: 'Terms and Conditions', href: '#'}
+{name: 'Terms and Conditions', href: '/termsandconditions'}
 ]
 
 export default function Footer() {
