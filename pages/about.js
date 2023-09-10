@@ -1,4 +1,5 @@
 import React from 'react';
+// import Image from "next/image";
 
 const AboutUs = () => {
   return (
@@ -10,8 +11,8 @@ const AboutUs = () => {
           {/* Profile Box 1 */}
           <div className="flex-shrink-0 overflow-hidden rounded-full w-36 h-36 md:w-48 md:h-48">
             <img
-              src="/path-to-profile-image-1.jpg"
-              alt="Profile 1"
+              src="images/profile_andy.png"
+              alt="Andy's Profile Picture"
               className="object-cover w-full h-full"
             />
           </div>
@@ -27,7 +28,7 @@ const AboutUs = () => {
           {/* Profile Box 2 */}
           <div className="flex-shrink-0 overflow-hidden rounded-full w-36 h-36 md:w-48 md:h-48">
             <img
-              src="/path-to-profile-image-2.jpg"
+              src="images/profile_james.jpg"
               alt="Profile 2"
               className="object-cover w-full h-full"
             />

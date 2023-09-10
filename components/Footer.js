@@ -1,7 +1,7 @@
 // navigation array for ease of changin / removing links etc. 
 const navigation = [
 {name: 'About', href: '/about'},
-{name: 'Contact', href: '#'},
+{name: 'Contact', href: '/Contact'},
 {name: 'Terms and Conditions', href: '/termsandconditions'}
 ]
 
