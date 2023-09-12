@@ -1,46 +1,45 @@
 import React from 'react';
-// import Image from "next/image";
+import Image from 'next/image';
 
 const AboutUs = () => {
   return (
-    <div className="p-8 bg-gray-100">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="mb-4 text-3xl font-semibold text-center">About Us</h1>
+    <div className="flex p-4">
+      {/* Profile Box 1 */}
+      <div className="flex flex-col items-center flex-1 p-4 space-y-4">
+        <Image
+          src="/images/profile_andy.png"
+          alt="Andy's Profile Picture"
+          className="flex-shrink-0 object-cover overflow-hidden rounded-full h-36 md:w-48 md:h-48"
+          width={200}
+          height={200}
+        />
+        <div className="text-center">
+          <h2 className="text-2xl font-semibold text-center">Andrew Lockyer</h2>
+          <h3 className="text-sm text-center text-gray-600">Business English Coach</h3>
+          <p className="pb-6 mt-2">
+            Andrew is an experienced English language teacher based in Mexico with a proven record in English language teaching and academic management over the last 8 years.
+          </p>
+        </div>
+      </div>
 
-        <div className="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-x-8">
-          {/* Profile Box 1 */}
-          <div className="flex-shrink-0 overflow-hidden rounded-full w-36 h-36 md:w-48 md:h-48">
-            <img
-              src="images/profile_andy.png"
-              alt="Andy's Profile Picture"
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <div className="text-center md:text-left">
-            <h2 className="text-xl font-semibold">John Doe</h2>
-            <h3 className="text-sm text-gray-600">English Tutor</h3>
-            <p className="mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              gravida urna quis dolor lacinia, vel malesuada dolor faucibus.
-            </p>
-          </div>
+      {/* Vertical Divider */}
+      <div className="mx-4 border border-gray-300 h-100 "></div> 
 
-          {/* Profile Box 2 */}
-          <div className="flex-shrink-0 overflow-hidden rounded-full w-36 h-36 md:w-48 md:h-48">
-            <img
-              src="images/profile_james.jpg"
-              alt="Profile 2"
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <div className="text-center md:text-left">
-            <h2 className="text-xl font-semibold">Jane Smith</h2>
-            <h3 className="text-sm text-gray-600">Business English Expert</h3>
-            <p className="mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              gravida urna quis dolor lacinia, vel malesuada dolor faucibus.
-            </p>
-          </div>
+      {/* Profile Box 2 */}
+      <div className="flex flex-col items-center flex-1 p-4 space-y-4">
+        <Image
+          src="/images/profile_james.jpg"
+          alt="Profile 2"
+          className="flex-shrink-0 object-cover overflow-hidden rounded-full w-36 h-36 md:w-48 md:h-48"
+          width={200}
+          height={200}
+        />
+        <div className="text-center">
+          <h2 className="text-2xl font-semibold text-center">James Ian Caddick</h2>
+          <h3 className="text-sm text-center text-gray-600">Business English Expert</h3>
+          <p className="pb-6 mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida urna quis dolor lacinia, vel malesuada dolor faucibus.
+          </p>
         </div>
       </div>
     </div>

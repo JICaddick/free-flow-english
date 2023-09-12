@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Contact = () => {
-  const emailAddress = 'info@example.com';
+  const emailAddress = 'freeflowbusinessenglish@gmail.com';
 
   const handleContactClick = () => {
     window.location.href = `mailto:${emailAddress}`;
