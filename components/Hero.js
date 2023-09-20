@@ -17,27 +17,23 @@ const Hero = () => {
     },
   });
 
-
   return (
-    <div ref={observe} className="px-4 mx-auto my-48 text-center max-w-7xl sm:mt-24 md:mt-72">
+    <div className="relative h-[40rem]">
       <Image
-        style={{filter: "blur(1px)", transform: "scale(1.1)", opacity: "0.8", position: "absolute", top: "0", left: "0", width: "100%", height: "100%",}}
-          src={'/hero_image.png'}
-          alt="Hero Image"
-          className="object-cover"
-          layout="fill"
-          quality={100}
+      style={{filter: "blur(1px)", transform: "scale(1.1)", opacity: "0.8", position: "absolute", top: "0", left: "0", width: "100%", height: "100%",}}
+        src="/hero_image.png"
+        alt="Hero Image"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
       />
-      <div className="relative content-end">
-        <h1 className="font-extrabold font-lora">
-          <p className="object-cover py-4 mt-24 text-white text-7xl bg-gradient-to-r sm:text-6xl md:text-7xl lg:text-8xl lg:pt-10 text-stroke-4 text-stroke-black .font-lora" style= {{textShadow:"20px 20px 25px black"}}>
-            Free Flow English
-          </p>
-        </h1>
-
+      <div className="absolute inset-0 flex flex-col items-center justify-center font-extrabold text-center text-white text-stroke-4 text-stroke-black">
+        <p className="text-7xl sm:text-6xl md:text-7xl lg:text-8xl lg:pt-10 font-lora" style={{ textShadow: "20px 20px 25px black" }}>
+          Free Flow English
+        </p>
       </div>
     </div>
   );
 };
 
-export default Hero
+export default Hero;
