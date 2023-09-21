@@ -53,6 +53,14 @@ const AboutUs = () => {
             James is also a full stack developer with a passion for creating and building dynamic web applications. Skilled in JavaScript, Typescript, React, Redux, Next.js, Ruby, RoR, Node, PostgreSQL, MariaDB, Jest, Rspec, and Shopify, he has built and maintained several websites and web applications for his own businesses and for clients; in fact, he coded this very website! Having spent time working for a California based CRM start-up he understands the impossible nature of juggling a fulltime tech career with his other business interests and family life so, for now, coding is more of a sidehustle and a hobby than a fulltime career.
             
             As well as his business endeavours he's been supporting his wife in the running and operations of Colombian NGO, Concretemos. Initially supporting victims of violence and displaced citizens, the NGO has gone on to broaden its horizons and now also focuses on social and environmental projects in the districts of Antioquia and El Meta.
+          
+            My clients have said...
+
+            "Always professional, punctual, and considerate. A positive attitude and lots of valuable feedback."
+
+            "James has always given me good insights of new global trends"
+
+            "James is meticulous with deep knowledge of business themes."
           </p>
         </div>
       </div>

@@ -26,9 +26,9 @@ const TermsAndConditions = () => {
 
           <h2>4. Cancellation and Rescheduling</h2>
 
-          <p>4.1 Cancellations: If you wish to cancel a scheduled coaching session, you must provide us with at least [number] hours' notice. Failure to do so may result in a forfeiture of that session.</p>
+          <p>4.1 Cancellations: If you wish to cancel a scheduled coaching session, you must provide us with at least 48 hours' notice. Failure to do so may result in a forfeiture of that session.</p>
 
-          <p>4.2 Rescheduling: You may request to reschedule a coaching session with at least [number] hours' notice, subject to our availability. Rescheduled sessions must take place within 7 days of the original scheduled session date.</p>
+          <p>4.2 Rescheduling: You may request to reschedule a coaching session with at least 24 hours' notice, subject to our availability. Rescheduled sessions must take place within 7 days of the original scheduled session date.</p>
 
           <h2>5. Client Commitment</h2>
 
@@ -46,23 +46,23 @@ const TermsAndConditions = () => {
 
           <p>8.1 In the event of a dispute arising from these Terms, we will attempt to resolve it through negotiation. If a resolution cannot be reached, the dispute may be escalated to mediation or legal action as necessary.</p>
 
-          <h2>9. Governing Law</h2>
+          {/* <h2>9. Governing Law</h2>
 
-          <p>9.1 These Terms are governed by and construed in accordance with the laws of [Your Jurisdiction], and any disputes will be subject to the exclusive jurisdiction of the courts of [Your Jurisdiction].</p>
+          <p>9.1 These Terms are governed by and construed in accordance with the laws of [Your Jurisdiction], and any disputes will be subject to the exclusive jurisdiction of the courts of [Your Jurisdiction].</p> */}
 
-          <h2>10. Changes to Terms</h2>
+          <h2>9. Changes to Terms</h2>
 
-          <p>10.1 We reserve the right to modify these Terms at any time. Any changes will be communicated to you in writing.</p>
+          <p>9.1 We reserve the right to modify these Terms at any time. Any changes will be communicated to you in writing.</p>
 
-          <h2>11. Intellectual Property Rights</h2>
+          <h2>10. Intellectual Property Rights</h2>
 
-          <p>11.1 All session plans and related content created by us remain our intellectual property. Clients are granted a limited, non-transferable license to use these materials solely for the purpose of the coaching sessions. Any reproduction, distribution, or use of these materials beyond the scope of the coaching sessions without our express written consent is prohibited.</p>
+          <p>10.1 All session plans and related content created by us remain our intellectual property. Clients are granted a limited, non-transferable license to use these materials solely for the purpose of the coaching sessions. Any reproduction, distribution, or use of these materials beyond the scope of the coaching sessions without our express written consent is prohibited.</p>
 
-          <h2>12. Recording of Sessions</h2>
+          <h2>11. Recording of Sessions</h2>
 
-          <p>12.1 We record coaching sessions to ensure quality and provide valuable feedback to our coaches. Clients have the right to decline session recording by submitting a written request. In such cases, no recordings will be made.</p>
+          <p>11.1 We record coaching sessions to ensure quality and provide valuable feedback to our coaches. Clients have the right to decline session recording by submitting a written request. In such cases, no recordings will be made.</p>
 
-          <p>12.2 For clients who consent to session recording, we may request to use these recordings for promotional purposes, such as testimonials or demonstrations. However, such usage will only occur with the client's explicit written consent.</p>
+          <p>11.2 For clients who consent to session recording, we may request to use these recordings for promotional purposes, such as testimonials or demonstrations. However, such usage will only occur with the client's explicit written consent.</p>
 
           <h2>By availing of our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</h2>
 

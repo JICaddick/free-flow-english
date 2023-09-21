@@ -2,6 +2,7 @@ import { getProductsInCollection } from "../lib/shopify"
 import ProductList from "../components/ProductList"
 import Hero from "../components/Hero"
 import Head from "next/head"
+import Link from "next/link"
 
 // we could make our Head dynamic by creating a new SEO component and passing in props (data) as the title.
 // lines 14 - 38 give us all the SEO we need for a perfect score. 
@@ -63,7 +64,9 @@ Topics will be specific to your needs and knowledge areas
 
 Sign up today and make an impact on the rest of your career!
 
-Learn more about the coaches here*.
+Learn more about the coaches<Link href="/about"> here.</Link>
+
+To schedule a free 30 minute consultation, please click<Link href="/Contact"> here.</Link>
         </p>
       </div>
     </div>
