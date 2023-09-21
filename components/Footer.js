@@ -7,8 +7,8 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <footer className="border border-black bg-sky-100">
-        <div className="px-4 py-4 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"> 
+    <footer className="border border-gray-300 bg-sky-100">
+        <div className="px-4 py-2 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8"> 
             <nav className="flex flex-wrap justify-center">
                 {
                     navigation.map((item, i) => (
@@ -20,7 +20,7 @@ export default function Footer() {
                     ))
                 }
             </nav>
-            <p className="mt-8 text-center text-gray-400">&copy;2023 Free Flow English, All rights reserved.</p>
+            <p className="mt-2 text-center text-gray-400">&copy;2023 Free Flow English, All rights reserved.</p>
         </div>
     </footer>
   )
