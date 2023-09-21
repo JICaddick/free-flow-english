@@ -12,7 +12,7 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="mb-4 text-3xl font-semibold">Contact Us</h1>
         <p className="mb-4">
-          Have a question or need assistance? Feel free to reach out to us via
+          If you have a question, need further assistance, or would like to schedule a free consultation please feel free to reach out to us via
           email.
         </p>
         <button
