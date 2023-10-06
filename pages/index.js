@@ -54,7 +54,7 @@ export default function Home({ products }) {
     Curious to learn more about your coaches? <Link href="/about"><a className="text-blue-500">Meet Andy and James here</a></Link>.
   </p>
   <p>
-    Ready to take the first step? <a target="_blank" href="https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session"><span className="text-blue-500">Schedule your free 30-minute consultation now</span></a>.
+    Ready to take the first step? <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session"><span className="text-blue-500">Schedule your free 30-minute consultation now</span></a>.
   </p>
 </div>
 </div>
