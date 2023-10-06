@@ -24,7 +24,7 @@ export default function Home({ products }) {
       <section className="py-10 bg-gray-100 border border-b-gray-300">
         <div className="container mx-auto bd-">
           {/* About the company content */}
-          <h2 className="mb-6 text-3xl font-semibold">About Our Company</h2>
+          <h2 className="mb-6 text-3xl font-semibold">Our Mission</h2>
 <div className="text-lg text-gray-700">
   <p className="mb-4">
     Meet Andrew and James, your partners in mastering Business English Communication. Our mission is to empower you with the language skills and confidence you need to excel in the professional world.
@@ -51,7 +51,7 @@ export default function Home({ products }) {
     Join us today, and transform your career journey.
   </p>
   <p className="mb-4">
-    Curious to learn more about your coaches? <Link href="/about"><a className="text-blue-500">Meet Andy and James here</a></Link>.
+    Curious to learn more about your coaches? <Link href="/about"><a className="text-blue-500">Meet Andrew and James here</a></Link>.
   </p>
   <p>
     Ready to take the first step? <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session"><span className="text-blue-500">Schedule your free 30-minute consultation now</span></a>.
