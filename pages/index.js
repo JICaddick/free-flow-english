@@ -25,40 +25,41 @@ export default function Home({ products }) {
         <div className="container mx-auto bd-">
           {/* About the company content */}
           <h2 className="mb-6 text-3xl font-semibold">About Our Company</h2>
-          <div className="text-lg text-gray-700">
-            <p className="mb-4">
-              We're Andy and James, and we offer private Business English Communication Classes to help you develop your language skills and feel more confident when communicating in a business environment.
-            </p>
-            <ul className="pl-6 mb-4 list-disc">
-              <li>
-                <span className="font-semibold">Free Get-To-Know-You Class:</span> This will help you identify your goals so that we can create the pathway to achieve them.
-              </li>
-              <li>
-                <span className="font-semibold">Private Sessions:</span> One-to-one sessions ensure that the sessions are specific to your circumstances & needs, so that you achieve your goals more quickly.
-              </li>
-              <li>
-                <span className="font-semibold">Flexible Scheduling:</span> Organize your sessions around your work and family life with options in the mornings, evenings, and weekends.
-              </li>
-              <li>
-                <span className="font-semibold">In-session Feedback:</span> Develop language skills immediately to help you speak more concisely and confidently.
-              </li>
-              <li>
-                <span className="font-semibold">Personalized Sessions:</span> Topics will be specific to your needs and knowledge areas.
-              </li>
-            </ul>
-            <p className="mb-4">
-              Sign up today and make an impact on the rest of your career!
-            </p>
-            <p className="mb-4">
-              Learn more about the coaches <Link href="/about"><a className="text-blue-500">here</a></Link>.
-            </p>
-            <p>
-              To schedule a free 30-minute consultation, please click <Link href="/Contact"><a className="text-blue-500">here</a></Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-      {/* End of "about the company" section */}
+<div className="text-lg text-gray-700">
+  <p className="mb-4">
+    Meet Andrew and James, your partners in mastering Business English Communication. Our mission is to empower you with the language skills and confidence you need to excel in the professional world.
+  </p>
+
+  <ul className="pl-6 mb-4 list-disc">
+    <li>
+      <span className="font-semibold">🚀 Free Get-To-Know-You Class:</span> Uncover your goals, and together, we'll chart the course to achieve them.
+    </li>
+    <li>
+      <span className="font-semibold">🌟 Private Sessions:</span> Tailored exclusively to your unique circumstances and objectives, ensuring rapid progress.
+    </li>
+    <li>
+      <span className="font-semibold">⏰ Flexible Scheduling:</span> We adapt to your busy life, with sessions available mornings, evenings, and weekends.
+    </li>
+    <li>
+      <span className="font-semibold">🗣️ In-session Feedback:</span> Instantly enhance your language skills, enabling more concise and confident communication.
+    </li>
+    <li>
+      <span className="font-semibold">🎯 Personalized Sessions:</span> Dive deep into topics relevant to your specific needs and areas of expertise.
+    </li>
+  </ul>
+  <p className="mb-4">
+    Join us today, and transform your career journey.
+  </p>
+  <p className="mb-4">
+    Curious to learn more about your coaches? <Link href="/about"><a className="text-blue-500">Meet Andy and James here</a></Link>.
+  </p>
+  <p>
+    Ready to take the first step? <a target="_blank" href="https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session"><span className="text-blue-500">Schedule your free 30-minute consultation now</span></a>.
+  </p>
+</div>
+</div>
+</section>
+
       <ProductList products={products} />
     </div>
   );
