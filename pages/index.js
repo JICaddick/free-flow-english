@@ -8,25 +8,25 @@ export default function Home({ products }) {
   return (
     <div>
       <Head>
-        <title>Modern eCommerce Course</title>
+        <title>Free Flow English</title>
         <meta charSet="utf-8" />
         <meta name="description" content="Build + Deploy your first Headless Shopify Storefront with Next.js + Tailwind in as little as a day." />
-        <meta property="og:title" content="Modern eCommerce Course" />
+        <meta property="og:title" content="Free Flow Business English" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://la-psicologa-perinatal.vercel.app/" />
         <meta property="og:image" content="https://la-psicologa-perinatal.vercel.app/images/la-psicologa.png" />
-        <meta property="og:description" content="Build + Deploy your first Headless Shopify Storefront with Next.js + Tailwind in as little as a day" />
+        <meta property="og:description" content="An application for the promotions and sales of Free Flow Business English's bespoke coaching sessions" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Modern eCommerce Course" />
+        <meta property="og:site_name" content="Free Flow Business English" />
       </Head>
       <Hero />
       {/* Start of "about the company" section */}
       <section className="py-10 bg-gray-100 border border-b-gray-300">
-        <div className="container mx-auto bd-">
+        <div className="container mx-auto">
           {/* About the company content */}
-          <h2 className="mb-6 text-3xl font-semibold">Our Mission</h2>
-<div className="text-lg text-gray-700">
-  <p className="mb-4">
+          <h2 className="mb-6 text-4xl font-bold font-playfair">Our Mission</h2>
+          <div className="text-lg text-gray-700">
+  <p className="mb-4 font-roboto">
     Meet Andrew and James, your partners in mastering Business English Communication. Our mission is to empower you with the language skills and confidence you need to excel in the professional world.
   </p>
 

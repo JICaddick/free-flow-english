@@ -88,32 +88,32 @@ export default function ProductForm({ product }) {
     
 
   return (
-    <div className=" rounded-2xl p-4 shadow-lg flex flex-col w-full md:w-1/3">
-      <h2 className="text-2xl font-bold">{product.title}</h2>
+    <div className="flex flex-col w-full p-4 shadow-lg rounded-2xl md:w-1/3">
+      <h2 className="text-3xl font-semibold">{product.title}</h2>
       <span className="pd-3">
         {formatter.format(product.variants.edges[0].node.priceV2.amount)}
       </span>
-      {product.options.map(({ name, values }) => (
+      {/* {product.options.map(({ name, values }) => (
         <ProductOptions
           key={`key-${name}`}
           name={name}
           values={values}
           selectedOptions={selectedOptions}
           setOptions={setOptions}
-        />
-      ))}
+        /> */}
+      {/* ))} */}
     {
         available ? 
             <button
                       onClick={() => {
                           addToCart(selectedVariant)
                       }}
-                className="bg-black rounded-lg text-white px-2 py-3 mt-3  hover:bg-gray-800"
+                className="px-2 py-3 mt-3 text-white bg-black rounded-lg hover:bg-gray-800"
             >
           Add to cart
         </button> : 
         <button
-          className="rounded-lg text-white px-2 py-3 mt-3 bg-gray-800 cursor-not-allowed">
+          className="px-2 py-3 mt-3 text-white bg-gray-800 rounded-lg cursor-not-allowed">
           Sold out!
         </button>
       }
