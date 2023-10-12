@@ -22,7 +22,7 @@ export default function Home({ products }) {
       <Hero />
       {/* Start of "about the company" section */}
       <section className="py-10 bg-gray-100 border border-b-gray-300">
-        <div className="container mx-auto">
+        <div className="container px-10 mx-auto">
           {/* About the company content */}
           <h2 className="mb-6 text-4xl font-bold font-playfair">Our Mission</h2>
           <div className="text-lg text-gray-700">
