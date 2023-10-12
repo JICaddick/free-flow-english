@@ -28,8 +28,8 @@ const Hero = () => {
         quality={100}
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center font-extrabold text-center text-white text-stroke-4 text-stroke-black">
-        <p className="text-7xl sm:text-6xl md:text-7xl lg:text-8xl lg:pt-10 font-lora" style={{ textShadow: "20px 20px 25px black" }}>
-          Free Flow English
+        <p className="text-7xl sm:text-6xl md:text-7xl lg:text-8xl lg:pt-10 font-lora" style={{ textShadow: "25px 25px 25px black" }}>
+          Free Flow Business English
         </p>
       </div>
     </div>
