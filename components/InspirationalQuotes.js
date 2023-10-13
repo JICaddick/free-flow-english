@@ -25,7 +25,7 @@ const InspirationalQuotes = () => {
 
   return (
     <div>
-      <p className="flex justify-center py-10">{currentQuote}</p>
+      <p className="flex justify-center px-10 py-10 text-center">{currentQuote}</p>
     </div>
   );
 };
