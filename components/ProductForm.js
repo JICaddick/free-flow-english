@@ -11,7 +11,7 @@ const fetcher = (url, id) => (
             id: id
         }
     }).then((res) => res.data)
-)
+) 
 
 export default function ProductForm({ product }) {
 
