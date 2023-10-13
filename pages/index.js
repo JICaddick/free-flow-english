@@ -10,11 +10,11 @@ export default function Home({ products }) {
       <Head>
         <title>Free Flow English</title>
         <meta charSet="utf-8" />
-        <meta name="description" content="Build + Deploy your first Headless Shopify Storefront with Next.js + Tailwind in as little as a day." />
+        <meta name="description" content="Free Flow Business English: An application for the promotions and sales of Free Flow Business English's bespoke business English coaching sessions" />
         <meta property="og:title" content="Free Flow Business English" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://la-psicologa-perinatal.vercel.app/" />
-        <meta property="og:image" content="https://la-psicologa-perinatal.vercel.app/images/la-psicologa.png" />
+        <meta property="og:image" content="" />
         <meta property="og:description" content="An application for the promotions and sales of Free Flow Business English's bespoke coaching sessions" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Free Flow Business English" />

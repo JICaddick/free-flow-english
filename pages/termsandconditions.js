@@ -13,8 +13,7 @@ const TermsAndConditions = () => {
             <h2 className="text-xl font-semibold">1. Introduction</h2>
             <p className="text-slate-600">
               1.1 These terms and conditions ("Terms") govern the provision of
-              business English coaching services ("Services") by [Your Business
-              Name], hereinafter referred to as "we," "us," or "our," to South
+              business English coaching services ("Services") by Free Flow Business English, hereinafter referred to as "we," "us," or "our," to South
               Korean business executives, hereinafter referred to as "clients"
               or "you."
             </p>

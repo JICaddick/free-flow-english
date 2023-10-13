@@ -9,12 +9,12 @@ export default function ShopProvider({ children }) {
     const [checkoutId, setCheckoutId] = useState('')
     const [checkoutUrl, setCheckoutUrl] = useState('')
     const [cartLoading, setCartLoading] = useState(false)
-// the empty array in useEffect means the function will only trigger once.
+    // the empty array in useEffect means the function will only trigger once.
     useEffect(() => {
         if (localStorage.checkout_id) {
-            // we're parsing because in addToCart we stringify the checkoutId. We're turning it back into a JSON object. 
-           const cartObject = JSON.parse(localStorage.checkout_id)
-// if there's only one item in the cart, we're going to set the cart to the cartObject. If there's more than one item, we're going to spread the cartObject into the cart.
+          // we're parsing because in addToCart we stringify the checkoutId. We're turning it back into a JSON object. 
+          const cartObject = JSON.parse(localStorage.checkout_id)
+            // if there's only one item in the cart, we're going to set the cart to the cartObject. If there's more than one item, we're going to spread the cartObject into the cart.
             if (cartObject[0].id) {
                 setCart([cartObject[0]])
             }   else if (cartObject[0].length > 0) {
@@ -44,7 +44,7 @@ export default function ShopProvider({ children }) {
         } else {
             let newCart = []
             let added = false
-// here w're checking if the id of the new item already exists in the cart. It if does exist we'll increase the quantity of the variant quantity in the cart. If it doesn't already exist we'll add it to the cart and set the new cart to the state.
+            // here we're checking if the id of the new item already exists in the cart. It if does exist we'll increase the quantity of the variant quantity in the cart. If it doesn't already exist we'll add it to the cart and set the new cart to the state.
             cart.map(item => {
                 if (item.id === newItem.id) {
                     item.variantQuantity++
@@ -56,7 +56,6 @@ export default function ShopProvider({ children }) {
             if (!added) {
                 newCart = [...cart, newItem]
             }
-// below we're updating the cart object and the checkout object.
             setCart(newCart) 
 
             const newCheckout = await updateCheckout(checkoutId, newCart)
@@ -65,7 +64,6 @@ export default function ShopProvider({ children }) {
     }
 
     async function removeCartItem(itemToRemove) {
-    // to remove items we use built in js filter method. We keep the items in the cart is they don't equal the item we want to remove.
         const updatedCart = cart.filter(item => item.id !== itemToRemove)
     // sets updated cart to cart, localstorage, and checkout
         setCartLoading(true)
@@ -140,7 +138,6 @@ export default function ShopProvider({ children }) {
         )
       }
     
-
   return (
     <CartContext.Provider
       value={{
@@ -164,5 +161,3 @@ export default function ShopProvider({ children }) {
 const ShopConsumer = CartContext.Consumer
 
 export { ShopConsumer, CartContext }
-    
-// we've now set up our cart context and we're going to wrap our app in the provider. We'll also need to import the provider into our _app.js file.
