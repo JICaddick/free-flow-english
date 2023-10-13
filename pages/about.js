@@ -15,7 +15,7 @@ const AboutUs = () => {
         />
         <div className="text-center">
           <h2 className="text-2xl font-semibold text-center">Andrew Lockyer</h2>
-          <h3 className="pb-2 text-sm text-center text-gray-600">Business English Coach</h3>
+          <h3 className="pb-2 text-sm text-center text-gray-600">Business English Coach | Co-founder | Academic Examiner</h3>
 
           <p className="py-2">
             Andrew is an experienced English language teacher based in Mexico with a proven record in English language teaching and academic management over the last 8 years.
@@ -49,7 +49,7 @@ const AboutUs = () => {
         />
         <div className="text-center">
           <h2 className="text-2xl font-semibold text-center">James Ian Caddick</h2>
-          <h3 className="pb-2 text-sm text-center text-gray-600">Business English Coach | Full-stack Developer | Co-founder | Director at JIC Investments | Family man | Philanthropist</h3>
+          <h3 className="pb-2 text-sm text-center text-gray-600">Business English Coach | Full-stack Developer | Co-founder | Director | Family man | Philanthropist</h3>
           <p className="py-2">
             James is a professional language coach with over 3 years of experience and success in coaching business professionals and young adults. With a wealth of experience in several fields, his interests and experience are broad in scope. Having co-founded multiple large cultural and entertainment venues across Latin America, he understands the pressures and challenges of managing businesses internationally in a second language. As well as co-managing one of these venues, James is currently operating a few Short-Term Let properties in the south and south-west of England, with a view to building a larger property portfolio through developments over the coming year.
           </p>  
