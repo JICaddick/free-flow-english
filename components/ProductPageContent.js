@@ -29,7 +29,7 @@ export default function ProductPageContent({ product }) {
               style={{'--swiper-navigation-color': '#000', '--swiper-pagination-color': '#000'}}
               navigation
               pagination={{ clickable: true }}
-              className="h-96 rounded-2xl"
+              className="h-full rounded-2xl"
               loop="true"
             >
               {images}

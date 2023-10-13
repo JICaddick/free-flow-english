@@ -88,10 +88,10 @@ export default function ProductForm({ product }) {
     
 
       return (
-        <div className="flex flex-col w-full p-4 shadow-lg rounded-2xl md:w-1/2 ">
+        <div className="flex flex-col w-full p-2 shadow-lg rounded-2xl md:w-1/2">
           <h2 className="text-3xl font-semibold">{product.title}</h2>
-          <p className="my-4 text-gray-600">{product.description}</p>
-          <span className="my-2 pd-3">
+          <p className="my-4 text-base text-gray-600">{product.description}</p>
+          <span>
             {formatter.format(product.variants.edges[0].node.priceV2.amount)}
           </span>
       {/* {product.options.map(({ name, values }) => (
