@@ -2,6 +2,7 @@ import Image from "next/image"
 import ProductForm from "./ProductForm"
 import { Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore, { Navigation, Pagination } from "swiper"
+import InspirationalQuotes from "./InspirationalQuotes"
 // import RecommendedList from './RecommendedList'
 
 export default function ProductPageContent({ product }) {
@@ -39,6 +40,7 @@ export default function ProductPageContent({ product }) {
       </div>
       {/* <p className="w-11/12 max-w-3xl pt-16 mx-auto space-y-8 md:space-x-4 lg:space-x-8">{product.description}</p> */}
       {/* <RecommendedList current={product.id} products={product.collections.edges[0].node.products.edges}/> */}
+      <InspirationalQuotes />
   </div>
   )
 }
