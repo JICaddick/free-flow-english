@@ -46,6 +46,9 @@ export default function Home({ products }) {
     <li>
       <span className="font-semibold">🎯 Personalized Sessions:</span> Dive deep into topics relevant to your specific needs and areas of expertise.
     </li>
+    <li>
+      <span className="font-semibold">🌎 Country-Specific Coaching:</span> Gain insights on country-specific points of cross-cultural business to enhance your global business interactions.
+    </li>
   </ul>
   <p className="mb-4">
     Join us today, and transform your career journey.
