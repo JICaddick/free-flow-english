@@ -30,41 +30,52 @@ export default function Home({ products }) {
     Meet Andrew and James, your partners in mastering Business English Communication. Our mission is to empower you with the language skills and confidence you need to excel in the professional world.
   </p>
 
-  <ul className="pl-6 mb-4 list-disc">
-    <li>
-      <span className="font-semibold">🚀 Free Get-To-Know-You Class:</span> Uncover your goals, and together, we'll chart the course to achieve them.
-    </li>
-    <li>
-      <span className="font-semibold">🌟 Private Sessions:</span> Tailored exclusively to your unique circumstances and objectives, ensuring rapid progress.
-    </li>
-    <li>
-      <span className="font-semibold">⏰ Flexible Scheduling:</span> We adapt to your busy life, with sessions available mornings, evenings, and weekends.
-    </li>
-    <li>
-      <span className="font-semibold">🗣️ In-session Feedback:</span> Instantly enhance your language skills, enabling more concise and confident communication.
-    </li>
-    <li>
-      <span className="font-semibold">🎯 Personalized Sessions:</span> Dive deep into topics relevant to your specific needs and areas of expertise.
-    </li>
-    <li>
-      <span className="font-semibold">🌎 Country-Specific Coaching:</span> Gain insights on country-specific points of cross-cultural business to enhance your global business interactions.
-    </li>
-  </ul>
-  <p className="mb-4">
-    Join us today, and transform your career journey.
-  </p>
+
+  <div className="grid grid-cols-1 my-8 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-col-4 xl:gap-x-8">
+    <div>
+      <p>🚀</p>
+        <h2 className="font-bold">Free Get-To-Know-You Class:</h2>
+        <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
+    </div>
+    <div>
+      <p>🌟</p>
+        <h2 className="font-bold"> Private Sessions:</h2>
+        <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
+    </div>
+    <div>
+      <p>⏰</p>
+        <h2 className="font-bold">Flexible Scheduling:</h2>
+        <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
+    </div>
+    <div>
+      <p>🗣️</p>
+        <h2 className="font-bold">In-session Feedback:</h2>
+        <p>Instantly enhance your language skills, enabling more concise and confident communication.</p>
+    </div>
+    <div>
+      <p>🎯</p>
+        <h2 className="font-bold">Personalized Sessions:</h2>
+        <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
+    </div>
+    <div>
+      <p>🌎</p>
+        <h2 className="font-bold">Country-Specific Coaching</h2>
+        <p>Gain insights on country-specific points of cross-cultural business to enhance your global business interactions.</p>
+    </div>
+    </div>
+
+
   <p className="mb-4">
     Curious to learn more about your coaches? <Link href="/about"><a className="text-blue-500">Meet Andrew and James here</a></Link>.
   </p>
   <p>
-    Ready to take the first step? <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session"><span className="text-blue-500">Schedule your free 30-minute consultation now</span></a>.
+    Ready to take the first step? Join us today, and transform your career journey. <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session"><span className="text-blue-500">Schedule your free 30-minute consultation now</span></a>.
   </p>
 </div>
 </div>
 </section>
-
-      <ProductList products={products} />
-    </div>
+        <ProductList products={products} />
+  </div>
   );
 }
 
