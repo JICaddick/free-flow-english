@@ -53,7 +53,7 @@ export default function Home({ products }) {
         quality={100}
       />
         <h2 className="font-bold"> Private Sessions:</h2>
-        <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
+        <p>Tailored exclusively to your unique circumstances and objectives, ensuring rapid progress.</p>
     </div>
     <div>
     <Image
@@ -64,7 +64,7 @@ export default function Home({ products }) {
         quality={100}
       />
         <h2 className="font-bold">Flexible Scheduling:</h2>
-        <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
+        <p>We adapt to your busy life, with sessions available mornings, evenings, and weekends.</p>
     </div>
     <div>
     <Image
@@ -86,7 +86,7 @@ export default function Home({ products }) {
         quality={100}
       />
         <h2 className="font-bold">Personalized Sessions:</h2>
-        <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
+        <p>Dive deep into topics relevant to your specific needs and areas of expertise.</p>
     </div>
     <div>
     <Image
