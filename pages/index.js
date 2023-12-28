@@ -90,11 +90,10 @@ export default function Home({ products }) {
     </div>
     <div>
     <Image
-      src="/uk_korea.jpg"
+      src="/uk_korea.png"
         alt="flags of the UK and South Korea"
         width={140}
         height="72"
-        objectFit="cover"
         quality={100}
       />
         <h2 className="font-bold">Country-Specific Coaching</h2>
