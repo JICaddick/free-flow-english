@@ -92,8 +92,9 @@ export default function Home({ products }) {
     <Image
       src="/uk_korea.jpg"
         alt="flags of the UK and South Korea"
-        width="96"
-        height="60"
+        width={140}
+        height="72"
+        objectFit="cover"
         quality={100}
       />
         <h2 className="font-bold">Country-Specific Coaching</h2>
