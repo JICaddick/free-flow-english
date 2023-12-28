@@ -99,15 +99,24 @@ export default function Home({ products }) {
         <h2 className="font-bold">Country-Specific Coaching</h2>
         <p>Gain insights on country-specific points of cross-cultural business to enhance your global business interactions.</p>
     </div>
-    </div>
-
-
-  <p className="mb-4">
-    Curious to learn more about your coaches? <Link href="/about"><a className="text-blue-500">Meet Andrew and James here</a></Link>.
-  </p>
+  </div>
+  <div className="pt-8 text-center">
   <p>
-    Ready to take the first step? Join us today, and transform your career journey. <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session"><span className="text-blue-500">Schedule your free 30-minute consultation now</span></a>.
+    Curious to learn more about your coaches?
   </p>
+  <Link href="/about">
+    <a className="text-blue-500">Meet Andrew and James here</a>
+  </Link>
+</div>
+<div className="pt-8 text-center">
+  <p>
+    Ready to take the first step? Join us today, and transform your career journey.
+  </p>
+  <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session">
+    <span className="text-blue-500">Schedule your free 30-minute consultation now</span>
+  </a>
+</div>
+
 </div>
 </div>
 </section>
