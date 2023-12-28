@@ -3,6 +3,7 @@ import ProductList from "../components/ProductList";
 import Hero from "../components/Hero";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home({ products }) {
   return (
@@ -33,32 +34,68 @@ export default function Home({ products }) {
 
   <div className="grid grid-cols-1 my-8 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-col-4 xl:gap-x-8">
     <div>
-      <p>🚀</p>
+      <Image
+      src="/images/remote_meeting.svg"
+        alt="flags of the UK and South Korea"
+        width="72"
+        height="72"
+        quality={100}
+      />
         <h2 className="font-bold">Free Get-To-Know-You Class:</h2>
         <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
     </div>
     <div>
-      <p>🌟</p>
+    <Image
+      src="/images/meeting.svg"
+        alt="flags of the UK and South Korea"
+        width="72"
+        height="72"
+        quality={100}
+      />
         <h2 className="font-bold"> Private Sessions:</h2>
         <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
     </div>
     <div>
-      <p>⏰</p>
+    <Image
+      src="/images/time_management.svg"
+        alt="flags of the UK and South Korea"
+        width="72"
+        height="72"
+        quality={100}
+      />
         <h2 className="font-bold">Flexible Scheduling:</h2>
         <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
     </div>
     <div>
-      <p>🗣️</p>
+    <Image
+      src="/images/feedback.svg"
+        alt="flags of the UK and South Korea"
+        width="72"
+        height="72"
+        quality={100}
+      />
         <h2 className="font-bold">In-session Feedback:</h2>
         <p>Instantly enhance your language skills, enabling more concise and confident communication.</p>
     </div>
     <div>
-      <p>🎯</p>
+    <Image
+      src="/images/personal_goals.svg"
+        alt="flags of the UK and South Korea"
+        width="72"
+        height="72"
+        quality={100}
+      />
         <h2 className="font-bold">Personalized Sessions:</h2>
         <p>Uncover your goals, and together, we'll chart the course to achieve them.</p>
     </div>
     <div>
-      <p>🌎</p>
+    <Image
+      src="/uk_korea.jpg"
+        alt="flags of the UK and South Korea"
+        width="96"
+        height="60"
+        quality={100}
+      />
         <h2 className="font-bold">Country-Specific Coaching</h2>
         <p>Gain insights on country-specific points of cross-cultural business to enhance your global business interactions.</p>
     </div>
