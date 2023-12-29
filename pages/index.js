@@ -104,15 +104,20 @@ export default function Home({ products }) {
         <p>Gain insights on country-specific points of cross-cultural business to enhance your global business interactions.</p>
     </div>
   </div>
-  <div className="pt-8 text-center">
-      <p>Curious to learn more about your coaches?</p>
-      <button
-        onClick={() => router.push('/about')}
-        className="px-2 py-3 mt-3 text-white bg-black rounded-lg"
-      >
-        Meet Andrew and James here
-      </button>
-    </div>
+  <div className="grid grid-cols-2 py-8 pl-8 border border-gray-300 rounded-md shadow-lg bg-slate-100">
+  <div>
+    <p className="pl-4 mb-2 text-3xl font-semibold">Curious to learn more about your coaches?</p>
+    <p className="pl-4 text-xl font-normal">
+    Discover the dedicated coaches ready to guide and empower you on your upskilling journey.
+    </p>
+  </div>
+  <button
+    onClick={() => router.push('/about')}
+    className="px-8 mr-16 text-lg text-white bg-blue-500 rounded-lg w-fit hover:bg-blue-600 justify-self-end max-h-12"
+  >
+    Meet Andrew and James here
+  </button>
+</div>
 <div className="pt-8 text-center">
   <p>
     Ready to take the first step? Join us today, and transform your career journey.
