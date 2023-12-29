@@ -115,16 +115,22 @@ export default function Home({ products }) {
     onClick={() => router.push('/about')}
     className="px-8 mr-16 text-lg text-white bg-blue-500 rounded-lg w-fit hover:bg-blue-600 justify-self-end max-h-12"
   >
-    Meet Andrew and James here
+    Meet Andrew and James
   </button>
 </div>
-<div className="pt-8 text-center">
-  <p>
-    Ready to take the first step? Join us today, and transform your career journey.
-  </p>
-  <a target="_blank" rel="noopener noreferrer" href="https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session">
-    <span className="text-blue-500">Schedule your free 30-minute consultation now</span>
-  </a>
+<div className="grid grid-cols-2 py-8 pl-8 mt-10 border border-gray-300 rounded-md shadow-lg bg-slate-100">
+  <div>
+    <p className="pl-4 mb-2 text-3xl font-semibold">Ready to take the first step?</p>
+    <p className="pl-4 text-xl font-normal">
+    Join us today, and transform your career journey.
+    </p>
+    </div>
+    <button
+      onClick={() => window.open("https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session", "_blank")}
+      className="px-8 mr-16 text-lg text-white bg-blue-500 rounded-lg w-fit hover:bg-blue-600 max-h-12 justify-self-end"
+    >
+      Schedule free 30-minute consultation
+    </button>
 </div>
 
 </div>
