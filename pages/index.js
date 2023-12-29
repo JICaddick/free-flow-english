@@ -4,8 +4,12 @@ import Hero from "../components/Hero";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";  
 
 export default function Home({ products }) {
+
+  const router = useRouter();
+  
   return (
     <div>
       <Head>
@@ -101,13 +105,14 @@ export default function Home({ products }) {
     </div>
   </div>
   <div className="pt-8 text-center">
-  <p>
-    Curious to learn more about your coaches?
-  </p>
-  <Link href="/about">
-    <a className="text-blue-500">Meet Andrew and James here</a>
-  </Link>
-</div>
+      <p>Curious to learn more about your coaches?</p>
+      <button
+        onClick={() => router.push('/about')}
+        className="px-2 py-3 mt-3 text-white bg-black rounded-lg"
+      >
+        Meet Andrew and James here
+      </button>
+    </div>
 <div className="pt-8 text-center">
   <p>
     Ready to take the first step? Join us today, and transform your career journey.
