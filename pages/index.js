@@ -27,7 +27,7 @@ export default function Home({ products }) {
       <Hero />
       {/* Start of "about the company" section */}
       <section className="py-10 bg-gray-100 border border-b-gray-300">
-        <div className="container px-10 mx-auto">
+        <div className="container px-10 pb-10 mx-auto">
           {/* About the company content */}
           <h2 className="mb-6 text-4xl font-bold font-playfair">Our Mission</h2>
           <div className="text-lg text-gray-700">
@@ -36,7 +36,7 @@ export default function Home({ products }) {
   </p>
 
 
-  <div className="grid grid-cols-1 my-8 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-col-4 xl:gap-x-8">
+  <div className="grid grid-cols-1 pb-10 my-8 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-col-4 xl:gap-x-8">
     <div>
       <Image
       src="/images/remote_meeting.svg"
@@ -104,33 +104,33 @@ export default function Home({ products }) {
         <p>Gain insights on country-specific points of cross-cultural business to enhance your global business interactions.</p>
     </div>
   </div>
-  <div className="grid grid-cols-2 py-8 pl-8 border border-gray-300 rounded-md shadow-lg bg-slate-100">
+  <div className="grid grid-cols-1 py-8 pl-8 border border-gray-300 rounded-md shadow-lg sm:grid-cols-2 sm:pl-0 md:pl-8 lg:pl-0 xl:pl-8 bg-slate-100">
   <div>
-    <p className="pl-4 mb-2 text-3xl font-semibold">Curious to learn more about your coaches?</p>
-    <p className="pl-4 text-xl font-normal">
-    Discover the dedicated coaches ready to guide and empower you on your upskilling journey.
+    <p className="pl-4 mb-2 text-3xl font-semibold sm:text-4xl md:text-3xl lg:text-4xl xl:text-3xl">Curious to learn more about your coaches?</p>
+    <p className="pl-4 text-xl font-normal sm:text-2xl md:text-xl lg:text-2xl xl:text-xl">
+      Discover the dedicated coaches ready to guide and empower you on your upskilling journey.
     </p>
   </div>
   <button
     onClick={() => router.push('/about')}
-    className="px-8 mr-16 text-lg text-white bg-blue-500 rounded-lg w-fit hover:bg-blue-600 justify-self-end max-h-12"
+    className="px-8 mt-4 mr-16 text-lg text-white bg-blue-500 rounded-lg sm:mt-0 w-fit hover:bg-blue-600 justify-self-end max-h-12 sm:ml-auto md:mr-16 lg:mr-auto xl:mr-16"
   >
     Meet Andrew and James
   </button>
 </div>
-<div className="grid grid-cols-2 py-8 pl-8 mt-10 border border-gray-300 rounded-md shadow-lg bg-slate-100">
+<div className="grid grid-cols-1 py-8 pl-8 mt-10 border border-gray-300 rounded-md shadow-lg sm:grid-cols-2 sm:pl-0 md:pl-8 lg:pl-0 xl:pl-8 bg-slate-100">
   <div>
-    <p className="pl-4 mb-2 text-3xl font-semibold">Ready to take the first step?</p>
-    <p className="pl-4 text-xl font-normal">
-    Join us today, and transform your career journey.
+    <p className="pl-4 mb-2 text-3xl font-semibold sm:text-4xl md:text-3xl lg:text-4xl xl:text-3xl">Ready to take the first step?</p>
+    <p className="pl-4 text-xl font-normal sm:text-2xl md:text-xl lg:text-2xl xl:text-xl">
+      Join us today, and transform your career journey.
     </p>
-    </div>
-    <button
-      onClick={() => window.open("https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session", "_blank")}
-      className="px-8 mr-16 text-lg text-white bg-blue-500 rounded-lg w-fit hover:bg-blue-600 max-h-12 justify-self-end"
-    >
-      Schedule free 30-minute consultation
-    </button>
+  </div>
+  <button
+    onClick={() => window.open("https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session", "_blank")}
+    className="px-8 mt-4 mr-16 text-lg text-white bg-blue-500 rounded-lg sm:mt-0 w-fit hover:bg-blue-600 justify-self-end max-h-12 sm:ml-auto md:mr-16 lg:mr-auto xl:mr-16"
+  >
+    Schedule free 30-minute consultation
+  </button>
 </div>
 
 </div>
