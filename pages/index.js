@@ -113,7 +113,7 @@ export default function Home({ products }) {
   </div>
   <button
     onClick={() => router.push('/about')}
-    className="px-8 mt-4 mr-16 text-lg text-white bg-blue-500 rounded-lg sm:mt-0 w-fit hover:bg-blue-600 justify-self-end max-h-12 sm:ml-auto md:mr-16 lg:mr-auto xl:mr-16"
+    className="px-8 mt-4 mr-16 text-lg text-white bg-blue-500 rounded-lg sm:mt-0 w-fit hover:bg-blue-600 justify-self-end xl:max-h-12 lg:max-h-12 md:max-h-12 sm:max-h-16 sm:ml-auto md:mr-16 lg:mr-auto xl:mr-16 min-h-fit"
   >
     Meet Andrew and James
   </button>
@@ -127,7 +127,7 @@ export default function Home({ products }) {
   </div>
   <button
     onClick={() => window.open("https://calendly.com/freeflowbusinessenglish/complimentary-strategy-session", "_blank")}
-    className="px-8 mt-4 mr-16 text-lg text-white bg-blue-500 rounded-lg sm:mt-0 w-fit hover:bg-blue-600 justify-self-end max-h-12 sm:ml-auto md:mr-16 lg:mr-auto xl:mr-16"
+    className="px-8 mt-4 mr-16 text-lg text-white bg-blue-500 rounded-lg sm:mt-0 w-fit hover:bg-blue-600 justify-self-end xl:max-h-12 lg:max-h-12 md:max-h-16 sm:max-h-24 sm:ml-auto md:mr-16 lg:mr-auto xl:mr-16"
   >
     Schedule free 30-minute consultation
   </button>
