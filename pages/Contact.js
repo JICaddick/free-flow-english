@@ -1,18 +1,19 @@
-import React from 'react';
+import React from "react"
 
 const Contact = () => {
-  const emailAddress = 'freeflowbusinessenglish@gmail.com';
+  const emailAddress = "freeflowbusinessenglish@gmail.com"
 
   const handleContactClick = () => {
-    window.location.href = `mailto:${emailAddress}`;
-  };
+    window.location.href = `mailto:${emailAddress}`
+  }
 
   return (
     <div className="p-8 bg-gray-100">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="mb-4 text-3xl font-semibold">Contact Us</h1>
         <p className="mb-4">
-          If you have any questions or require further assistance, please don't hesitate to contact us via email.
+          If you have any questions or require further assistance, please don't
+          hesitate to contact us via email.
         </p>
         <button
           className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
@@ -22,7 +23,7 @@ const Contact = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

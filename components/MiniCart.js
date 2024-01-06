@@ -3,25 +3,25 @@ import { Dialog, Transition } from "@headlessui/react"
 import { XIcon } from "@heroicons/react/outline"
 import Image from "next/image"
 import { CartContext } from "../context/shopContext"
-import { formatter } from "../utils/helpers"  
+import { formatter } from "../utils/helpers"
 import Link from "next/link"
 
 export default function MiniCart({ cart }) {
-    const cancelButtonRef = useRef()
+  const cancelButtonRef = useRef()
 
-    const {
-      cartOpen,
-      setCartOpen,
-      checkoutUrl,  
-      removeCartItem,
-      incrementCartItem,
-      decrementCartItem,
-    } = useContext(CartContext)
-    // if there are items in the cart, we'll map through them and create a list of items. We'll multiply the price by the quantity to get the total price for each item.
-    let cartTotal = 0
-    cart.map(item => {
-        cartTotal += item?.variantPrice * item?.variantQuantity
-    })
+  const {
+    cartOpen,
+    setCartOpen,
+    checkoutUrl,
+    removeCartItem,
+    incrementCartItem,
+    decrementCartItem,
+  } = useContext(CartContext)
+  // if there are items in the cart, we'll map through them and create a list of items. We'll multiply the price by the quantity to get the total price for each item.
+  let cartTotal = 0
+  cart.map((item) => {
+    cartTotal += item?.variantPrice * item?.variantQuantity
+  })
 
   return (
     <Transition.Root show={cartOpen} as={Fragment}>
@@ -79,92 +79,94 @@ export default function MiniCart({ cart }) {
 
                       <div className="mt-8">
                         <div className="flow-root">
-                          {
-                            cart.length > 0 ?
-                              
-                              <ul
-                            role="list"
-                            className="-my-6 divide-y divide-gray-200"
-                          >
-                            {cart.map((product) => (
-                              <li
-                                key={product.id}
-                                className="relative flex py-6"
-                              >
-                                <div className="relative flex-shrink-0 w-24 overflow-hidden border border-gray-200 rounded-md">
-                                  <Image
-                                    src={product.image}
-                                    alt={product.title}
-                                    layout="fill"
-                                    objectFit="cover"
-                                  />
-                                </div>
+                          {cart.length > 0 ? (
+                            <ul
+                              role="list"
+                              className="-my-6 divide-y divide-gray-200"
+                            >
+                              {cart.map((product) => (
+                                <li
+                                  key={product.id}
+                                  className="relative flex py-6"
+                                >
+                                  <div className="relative flex-shrink-0 w-24 overflow-hidden border border-gray-200 rounded-md">
+                                    <Image
+                                      src={product.image}
+                                      alt={product.title}
+                                      layout="fill"
+                                      objectFit="cover"
+                                    />
+                                  </div>
 
-                                <div className="flex flex-col flex-1 ml-4">
-                                  <div>
-                                    <div className="flex justify-between text-base font-medium text-gray-900">
-                                      <h3>
-                                        <Link
-                                          href={`/products/${product.handle}`}
-                                          passHref
-                                        >
-                                          <a onClick={() => setCartOpen(false)}>
-                                            {product.title}
-                                          </a>
-                                        </Link>
-                                      </h3>
-                                      <p className="ml-4">
-                                        {formatter.format(product.variantPrice)}
+                                  <div className="flex flex-col flex-1 ml-4">
+                                    <div>
+                                      <div className="flex justify-between text-base font-medium text-gray-900">
+                                        <h3>
+                                          <Link
+                                            href={`/products/${product.handle}`}
+                                            passHref
+                                          >
+                                            <a
+                                              onClick={() => setCartOpen(false)}
+                                            >
+                                              {product.title}
+                                            </a>
+                                          </Link>
+                                        </h3>
+                                        <p className="ml-4">
+                                          {formatter.format(
+                                            product.variantPrice,
+                                          )}
+                                        </p>
+                                      </div>
+                                      <p className="mt-1 text-sm text-gray-500">
+                                        {product.variantTitle}
                                       </p>
                                     </div>
-                                    <p className="mt-1 text-sm text-gray-500">
-                                      {product.variantTitle}
-                                    </p>
-                                  </div>
-                                  <div className="flex items-end justify-between flex-1 text-sm">
-                                    {/* <p className="text-gray-500">Qty {product.variantQuantity}</p> */}
-                                    <div className={`border`}>
-                                      <button
-                                        className="px-2"
-                                        onClick={() =>
-                                          decrementCartItem(product)
-                                        }
-                                      >
-                                        -
-                                      </button>
-                                      <span className="px-2 border-l border-r">
-                                        {product.variantQuantity}
-                                      </span>
-                                      <button
-                                        className="px-2"
-                                        onClick={() =>
-                                          incrementCartItem(product)
-                                        }
-                                      >
-                                        +
-                                      </button>
-                                    </div>
-                                    <div className="flex">
-                                      <button
-                                        onClick={() =>
-                                          removeCartItem(product.id)
-                                        }
-                                        type="button"
-                                        className="font-medium text-gray-500 hover:text-gray-800"
-                                      >
-                                        Remove
-                                      </button>
+                                    <div className="flex items-end justify-between flex-1 text-sm">
+                                      {/* <p className="text-gray-500">Qty {product.variantQuantity}</p> */}
+                                      <div className={`border`}>
+                                        <button
+                                          className="px-2"
+                                          onClick={() =>
+                                            decrementCartItem(product)
+                                          }
+                                        >
+                                          -
+                                        </button>
+                                        <span className="px-2 border-l border-r">
+                                          {product.variantQuantity}
+                                        </span>
+                                        <button
+                                          className="px-2"
+                                          onClick={() =>
+                                            incrementCartItem(product)
+                                          }
+                                        >
+                                          +
+                                        </button>
+                                      </div>
+                                      <div className="flex">
+                                        <button
+                                          onClick={() =>
+                                            removeCartItem(product.id)
+                                          }
+                                          type="button"
+                                          className="font-medium text-gray-500 hover:text-gray-800"
+                                        >
+                                          Remove
+                                        </button>
+                                      </div>
                                     </div>
                                   </div>
-                                </div>
-                              </li>
-                            ))}
-                              </ul> :
-                              <div>
-                                <p>Nothing in your cart!</p>
-                              </div>
-                          }
-                          
+                                </li>
+                              ))}
+                            </ul>
+                          ) : (
+                            <div>
+                              <p>Nothing in your cart!</p>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>

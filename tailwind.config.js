@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        playfair: ['Playfair Display', 'serif'],
-        roboto: ['Roboto', 'sans'],
+        playfair: ["Playfair Display", "serif"],
+        roboto: ["Roboto", "sans"],
       },
     },
-  plugins: [],
+    plugins: [],
   },
 }

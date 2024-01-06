@@ -1,13 +1,15 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-// Welcome to the magical built in Next.js API routes. It's like a mini server in our frontend- we don't need to spin up our own server. 
+// Welcome to the magical built in Next.js API routes. It's like a mini server in our frontend- we don't need to spin up our own server.
 // availableForSale returns a boolean value depending on variant availability.
 
 export default async function available(req, res) {
-const { query: { id } } = req
+  const {
+    query: { id },
+  } = req
 
-const domain = process.env.SHOPIFY_STORE_DOMAIN
+  const domain = process.env.SHOPIFY_STORE_DOMAIN
   const storefrontAccessToken = process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN
-  
+
   async function ShopifyData(query) {
     const URL = `https://${domain}/api/2022-07/graphql.json`
 
@@ -62,5 +64,4 @@ const domain = process.env.SHOPIFY_STORE_DOMAIN
   res.json(products)
 }
 
-// the API routes are deployed seperately from our App. 
-
+// the API routes are deployed seperately from our App.

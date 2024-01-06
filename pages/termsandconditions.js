@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 
 const TermsAndConditions = () => {
   return (
@@ -13,8 +13,11 @@ const TermsAndConditions = () => {
             <h2 className="text-xl font-semibold">1. Introduction</h2>
             <p className="py-1 text-slate-600">
               1.1 These terms and conditions ("Terms") govern the provision of
-              business English coaching services ("Services") by Free Flow Business English, hereinafter referred to as "we," "us," or "our," to business professionals and individuals seeking to enhance their English language skills for professional purposes, hereinafter referred to as "clients"
-              or "you."
+              business English coaching services ("Services") by Free Flow
+              Business English, hereinafter referred to as "we," "us," or "our,"
+              to business professionals and individuals seeking to enhance their
+              English language skills for professional purposes, hereinafter
+              referred to as "clients" or "you."
             </p>
           </section>
 
@@ -33,11 +36,16 @@ const TermsAndConditions = () => {
               3.1 Payment for Services is due in advance and must be made in
               accordance with the payment method specified by us.
             </p>
-            <p className="py-1 text-slate-600">3.2 All fees are non-refundable unless otherwise specified in writing.</p>
+            <p className="py-1 text-slate-600">
+              3.2 All fees are non-refundable unless otherwise specified in
+              writing.
+            </p>
           </section>
 
           <section className="mb-4">
-            <h2 className="text-xl font-semibold">4. Cancellation and Rescheduling</h2>
+            <h2 className="text-xl font-semibold">
+              4. Cancellation and Rescheduling
+            </h2>
             <p className="py-1 text-slate-600">
               4.1 Cancellations: If you wish to cancel a scheduled coaching
               session, you must provide us with at least 48 hours' notice.
@@ -50,7 +58,12 @@ const TermsAndConditions = () => {
               scheduled session date.
             </p>
             <p className="py-1 text-slate-600">
-              4.3 Exemptions Under Extenuating Circumstances: In cases of extenuating circumstances, such as a medical emergency or other unforeseen events that prevent you from attending or rescheduling a session, we may consider exemptions to the cancellation and rescheduling policies. Exemption requests must be submitted in writing and will be evaluated on a case-by-case basis.
+              4.3 Exemptions Under Extenuating Circumstances: In cases of
+              extenuating circumstances, such as a medical emergency or other
+              unforeseen events that prevent you from attending or rescheduling
+              a session, we may consider exemptions to the cancellation and
+              rescheduling policies. Exemption requests must be submitted in
+              writing and will be evaluated on a case-by-case basis.
             </p>
           </section>
 
@@ -100,14 +113,16 @@ const TermsAndConditions = () => {
           </section>
 
           <section className="mb-4">
-            <h2 className="text-xl font-semibold">10. Intellectual Property Rights</h2>
+            <h2 className="text-xl font-semibold">
+              10. Intellectual Property Rights
+            </h2>
             <p className="py-1 text-slate-600">
               10.1 All session plans and related content created by us remain
               our intellectual property. Clients are granted a limited,
               non-transferable license to use these materials solely for the
               purpose of the coaching sessions. Any reproduction, distribution,
-              or use of these materials beyond the scope of the coaching sessions
-              without our express written consent is prohibited.
+              or use of these materials beyond the scope of the coaching
+              sessions without our express written consent is prohibited.
             </p>
           </section>
 
@@ -122,8 +137,8 @@ const TermsAndConditions = () => {
             <p className="py-1 text-slate-600">
               11.2 For clients who consent to session recording, we may request
               to use these recordings for promotional purposes, such as
-              testimonials or demonstrations. However, such usage will only occur
-              with the client's explicit written consent.
+              testimonials or demonstrations. However, such usage will only
+              occur with the client's explicit written consent.
             </p>
           </section>
 
@@ -136,7 +151,7 @@ const TermsAndConditions = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TermsAndConditions;
+export default TermsAndConditions
