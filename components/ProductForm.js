@@ -89,7 +89,7 @@ export default function ProductForm({ product }) {
 
   return (
     <div className="flex flex-col w-full p-2 shadow-lg rounded-2xl md:w-1/2">
-      <h2 className="text-3xl font-semibold">{product.title}</h2>
+      <h2 className="text-3xl font-semibold text-gray-900">{product.title}</h2>
       <p className="my-4 text-base text-gray-600">{product.description}</p>
       <span>
         {formatter.format(product.variants.edges[0].node.priceV2.amount)}
@@ -108,7 +108,7 @@ export default function ProductForm({ product }) {
           onClick={() => {
             addToCart(selectedVariant)
           }}
-          className="px-2 py-3 mt-3 text-white bg-black rounded-lg hover:bg-gray-800"
+          className="px-2 py-3 mt-3 text-white bg-blue-500 rounded-lg hover:bg-blue-600"
         >
           Add to cart
         </button>

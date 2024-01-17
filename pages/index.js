@@ -2,7 +2,6 @@ import { getProductsInCollection } from "../lib/shopify"
 import ProductList from "../components/ProductList"
 import Hero from "../components/Hero"
 import Head from "next/head"
-import Link from "next/link"
 import Image from "next/image"
 import { useRouter } from "next/router"
 
@@ -38,7 +37,7 @@ export default function Home({ products }) {
         <div className="container px-10 pb-10 mx-auto">
           {/* About the company content */}
           <h2 className="mb-6 text-4xl font-bold font-playfair">Our Mission</h2>
-          <div className="text-lg text-gray-700">
+          <div className="text-lg text-gray-600">
             <p className="mb-4 font-roboto">
               Meet Andrew and James, your partners in mastering Business English
               Communication. Our mission is to empower you with the language
@@ -54,8 +53,8 @@ export default function Home({ products }) {
                   height="72"
                   quality={100}
                 />
-                <h2 className="font-bold">Free Get-To-Know-You Class:</h2>
-                <p>
+                <h2 className="font-bold text-gray-900">Free Get-To-Know-You Class:</h2>
+                <p className="text-gray-600">
                   Uncover your goals, and together, we'll chart the course to
                   achieve them.
                 </p>
@@ -68,8 +67,8 @@ export default function Home({ products }) {
                   height="72"
                   quality={100}
                 />
-                <h2 className="font-bold"> Private Sessions:</h2>
-                <p>
+                <h2 className="font-bold text-gray-900"> Private Sessions:</h2>
+                <p className="text-gray-600">
                   Tailored exclusively to your unique circumstances and
                   objectives, ensuring rapid progress.
                 </p>
@@ -82,8 +81,8 @@ export default function Home({ products }) {
                   height="72"
                   quality={100}
                 />
-                <h2 className="font-bold">Flexible Scheduling:</h2>
-                <p>
+                <h2 className="font-bold text-gray-900">Flexible Scheduling:</h2>
+                <p className="text-gray-600">
                   We adapt to your busy life, with sessions available mornings,
                   evenings, and weekends.
                 </p>
@@ -96,8 +95,8 @@ export default function Home({ products }) {
                   height="72"
                   quality={100}
                 />
-                <h2 className="font-bold">In-session Feedback:</h2>
-                <p>
+                <h2 className="font-bold text-gray-900">In-session Feedback:</h2>
+                <p className="text-gray-600">
                   Instantly enhance your language skills, enabling more concise
                   and confident communication.
                 </p>
@@ -110,8 +109,8 @@ export default function Home({ products }) {
                   height="72"
                   quality={100}
                 />
-                <h2 className="font-bold">Personalized Sessions:</h2>
-                <p>
+                <h2 className="font-bold text-gray-900">Personalized Sessions:</h2>
+                <p className="text-gray-600">
                   Dive deep into topics relevant to your specific needs and
                   areas of expertise.
                 </p>
@@ -124,13 +123,14 @@ export default function Home({ products }) {
                   height="72"
                   quality={100}
                 />
-                <h2 className="font-bold">Country-Specific Coaching</h2>
-                <p>
+                <h2 className="font-bold text-gray-900">Country-Specific Coaching</h2>
+                <p className="text-gray-600">
                   Gain insights on country-specific points of cross-cultural
                   business to enhance your global business interactions.
                 </p>
               </div>
             </div>
+            {/* Buttons off-center below w-1025 */}
             <div className="grid grid-cols-1 py-8 pl-8 border border-gray-300 rounded-md shadow-lg sm:grid-cols-2 sm:pl-0 md:pl-8 lg:pl-0 xl:pl-8 bg-slate-100">
               <div>
                 <p className="pl-4 mb-2 text-3xl font-semibold sm:text-4xl md:text-3xl lg:text-4xl xl:text-3xl">

@@ -152,7 +152,7 @@ export default function MiniCart({ cart }) {
                                             removeCartItem(product.id)
                                           }
                                           type="button"
-                                          className="font-medium text-gray-500 hover:text-gray-800"
+                                          className="font-medium text-gray-600 hover:text-gray-900"
                                         >
                                           Remove
                                         </button>
@@ -176,23 +176,23 @@ export default function MiniCart({ cart }) {
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>
                         </div>
-                        <p className="mt-0.5 text-sm text-gray-500">
+                        <p className="mt-0.5 text-sm text-gray-600">
                           Shipping and taxes calculated at checkout.
                         </p>
                         <div className="mt-6">
                           <a
                             href={checkoutUrl}
-                            className="flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-black border border-transparent rounded-md shadow-sm hover:bg-gray-800"
+                            className="flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm hover:bg-blue-600"
                           >
                             Checkout
                           </a>
                         </div>
-                        <div className="flex justify-center mt-6 text-sm text-center text-gray-500">
+                        <div className="flex justify-center mt-6 text-sm text-center text-gray-600">
                           <p>
-                            or
+                            or {' '}
                             <button
                               type="button"
-                              className="font-medium hover:text-grey-800"
+                              className="font-medium hover:text-grey-600"
                               onClick={() => setCartOpen(false)}
                             >
                               Continue Shopping

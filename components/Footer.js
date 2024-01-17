@@ -12,7 +12,7 @@ export default function Footer() {
         <nav className="flex flex-wrap justify-center">
           {navigation.map((item, i) => (
             <div key={i} className="px-6 py-2 ">
-              <a href={item.href} className="text-gray-500 hover:text-gray-900">
+              <a href={item.href} className="text-gray-600 hover:text-gray-900">
                 {item.name}
               </a>
             </div>
