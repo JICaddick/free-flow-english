@@ -176,9 +176,9 @@ export default function MiniCart({ cart }) {
                           <p>Subtotal</p>
                           <p>{formatter.format(cartTotal)}</p>
                         </div>
-                        <p className="mt-0.5 text-sm text-gray-600">
+                        {/* <p className="mt-0.5 text-sm text-gray-600">
                           Shipping and taxes calculated at checkout.
-                        </p>
+                        </p> */}
                         <div className="mt-6">
                           <a
                             href={checkoutUrl}
