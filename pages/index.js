@@ -133,27 +133,27 @@ export default function Home({ products }) {
             {/* Buttons off-center below sm */}
             <div className="grid grid-cols-1 py-8 pl-8 border border-gray-300 rounded-md shadow-lg sm:grid-cols-2 sm:pl-0 md:pl-8 xl:pl-8 bg-slate-100">
               <div>
-                <p className="pl-4 mb-2 text-3xl font-semibold text-gray-900 sm:text-4xl md:text-3xl lg:text-4xl xl:text-3xl">
+                <p className="pl-4 mb-2 text-3xl font-semibold text-gray-900 sm:text-3xl md:text-3xl lg:text-4xl xl:text-3xl">
                   Curious to learn more about your coaches?
                 </p>
-                <p className="pl-4 text-xl font-normal text-gray-600 sm:text-2xl md:text-xl lg:text-2xl xl:text-xl">
+                <p className="pl-4 text-xl font-normal text-gray-600 sm:text-xl md:text-xl lg:text-2xl xl:text-xl">
                   Discover the dedicated coaches ready to guide and empower you
                   on your upskilling journey.
                 </p>
               </div>
               <button
                 onClick={() => router.push("/about")}
-                className="px-8 mt-4 mr-16 text-lg text-white bg-blue-500 rounded-lg sm:mt-0 w-fit hover:bg-blue-600 justify-self-end xl:max-h-12 lg:max-h-12 md:max-h-12 sm:max-h-16 sm:mx-4 md:mx-8 lg:mx-auto xl:mr-16 min-h-fit"
+                className="px-8 mt-4 mr-16 text-lg text-white bg-blue-500 rounded-lg w-fit hover:bg-blue-600 xl:justify-self-end 2xl:justify-self-end xl:max-h-12 lg:max-h-12 md:max-h-12 sm:max-h-16 sm:mx-4 md:mx-8 lg:mx-auto xl:mr-16 min-h-fit md:mt-2 sm:mt-2 justify-self-center"
               >
                 Meet Andrew and James
               </button>
             </div>
             <div className="grid grid-cols-1 py-8 pl-8 mt-10 border border-gray-300 rounded-md shadow-lg sm:grid-cols-2 sm:pl-0 md:pl-8 xl:pl-8 bg-slate-100">
               <div>
-                <p className="pl-4 mb-2 text-3xl font-semibold text-gray-900 sm:text-4xl md:text-3xl lg:text-4xl xl:text-3xl">
+                <p className="pl-4 mb-2 text-3xl font-semibold text-gray-900 sm:text-3xl md:text-3xl lg:text-4xl xl:text-3xl">
                   Ready to take the first step?
                 </p>
-                <p className="pl-4 text-xl font-normal text-gray-600 sm:text-2xl md:text-xl lg:text-2xl xl:text-xl">
+                <p className="pl-4 text-xl font-normal text-gray-600 sm:text-xl md:text-xl lg:text-2xl xl:text-xl">
                   Join us today, and transform your career journey.
                 </p>
               </div>
@@ -164,7 +164,7 @@ export default function Home({ products }) {
                     "_blank",
                   )
                 }
-                className="px-8 mt-4 mr-16 text-lg text-white bg-blue-500 rounded-lg sm:mt-0 w-fit hover:bg-blue-600 justify-self-end xl:max-h-12 lg:max-h-12 md:max-h-16 sm:max-h-20 sm:mx-4 md:mx-8 lg:mx-auto xl:mr-16"
+                className="px-8 mt-4 mr-16 text-lg text-white bg-blue-500 rounded-lg md:mt-1 w-fit hover:bg-blue-600 justify-self-end xl:max-h-12 lg:max-h-12 md:max-h-16 sm:max-h-20 sm:mx-4 md:mx-8 lg:mx-auto xl:mr-16 sm:mt-1"
               >
                 Schedule free 30-minute consultation
               </button>
