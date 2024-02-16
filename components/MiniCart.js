@@ -113,15 +113,15 @@ export default function MiniCart({ cart }) {
                                             </a>
                                           </Link>
                                         </h3>
-                                        <p className="ml-4">
+                                        <p className="pb-12">
                                           {formatter.format(
                                             product.variantPrice,
                                           )}
                                         </p>
                                       </div>
-                                      <p className="mt-1 text-sm text-gray-500">
+                                      {/* <p className="mt-1 text-sm text-gray-500">
                                         {product.variantTitle}
-                                      </p>
+                                      </p> */}
                                     </div>
                                     <div className="flex items-end justify-between flex-1 text-sm">
                                       {/* <p className="text-gray-500">Qty {product.variantQuantity}</p> */}

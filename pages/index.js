@@ -133,10 +133,10 @@ export default function Home({ products }) {
             {/* Buttons off-center below w-1025 */}
             <div className="grid grid-cols-1 py-8 pl-8 border border-gray-300 rounded-md shadow-lg sm:grid-cols-2 sm:pl-0 md:pl-8 lg:pl-0 xl:pl-8 bg-slate-100">
               <div>
-                <p className="pl-4 mb-2 text-3xl font-semibold sm:text-4xl md:text-3xl lg:text-4xl xl:text-3xl">
+                <p className="pl-4 mb-2 text-3xl font-semibold text-gray-900 sm:text-4xl md:text-3xl lg:text-4xl xl:text-3xl">
                   Curious to learn more about your coaches?
                 </p>
-                <p className="pl-4 text-xl font-normal sm:text-2xl md:text-xl lg:text-2xl xl:text-xl">
+                <p className="pl-4 text-xl font-normal text-gray-600 sm:text-2xl md:text-xl lg:text-2xl xl:text-xl">
                   Discover the dedicated coaches ready to guide and empower you
                   on your upskilling journey.
                 </p>
@@ -150,10 +150,10 @@ export default function Home({ products }) {
             </div>
             <div className="grid grid-cols-1 py-8 pl-8 mt-10 border border-gray-300 rounded-md shadow-lg sm:grid-cols-2 sm:pl-0 md:pl-8 lg:pl-0 xl:pl-8 bg-slate-100">
               <div>
-                <p className="pl-4 mb-2 text-3xl font-semibold sm:text-4xl md:text-3xl lg:text-4xl xl:text-3xl">
+                <p className="pl-4 mb-2 text-3xl font-semibold text-gray-900 sm:text-4xl md:text-3xl lg:text-4xl xl:text-3xl">
                   Ready to take the first step?
                 </p>
-                <p className="pl-4 text-xl font-normal sm:text-2xl md:text-xl lg:text-2xl xl:text-xl">
+                <p className="pl-4 text-xl font-normal text-gray-600 sm:text-2xl md:text-xl lg:text-2xl xl:text-xl">
                   Join us today, and transform your career journey.
                 </p>
               </div>
